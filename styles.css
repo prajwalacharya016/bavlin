@@ -52,6 +52,14 @@ h1, h2, h3 {
   color: #1a1a1a;
   text-decoration: none;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 .nav {
   display: flex;
