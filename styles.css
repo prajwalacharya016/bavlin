@@ -105,10 +105,13 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(180deg, #fafaf9 0%, #f0efec 100%);
+  background: #fafaf9;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
-.hero-content { max-width: 720px; }
+.hero-content {
+  width: 100%;
+  max-width: 100%;
+}
 .hero-eyebrow {
   font-size: 0.8rem;
   font-weight: 500;
@@ -125,7 +128,7 @@ h1, h2, h3 {
   font-size: 1.1rem;
   color: #444;
   margin: 0 0 2rem;
-  max-width: 540px;
+  max-width: none;
 }
 .btn {
   display: inline-block;
@@ -186,6 +189,15 @@ h1, h2, h3 {
 
 /* --- About --- */
 .about { background: #fff; }
+.about-inner {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1.5rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .about-inner { padding: 0 2.5rem; }
+}
 .about .section-header { max-width: none; }
 .about-grid {
   display: block;
@@ -196,7 +208,7 @@ h1, h2, h3 {
   color: #444;
   margin: 0 0 3rem;
   line-height: 1.7;
-  max-width: 720px;
+  max-width: none;
 }
 .about-points {
   display: grid;
