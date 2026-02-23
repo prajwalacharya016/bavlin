@@ -55,11 +55,21 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
 }
-.logo-img {
-  height: 36px;
-  width: auto;
+.logo-mark {
+  display: inline-block;
+  line-height: 0;
+  margin-right: 0.5rem;
+}
+.logo-mark svg {
   display: block;
-  object-fit: contain;
+  width: 36px;
+  height: 36px;
+}
+.logo-text {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 .nav {
   display: flex;
